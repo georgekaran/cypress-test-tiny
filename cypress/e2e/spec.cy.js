@@ -5,6 +5,6 @@ describe('page', () => {
 
     cy.contains('Kitchen Sink').should('be.visible');
 
-    cy.document().selectFile('example.json');
+    cy.document().selectFile('example.json', {action: 'drag-drop'});
   })
 })
